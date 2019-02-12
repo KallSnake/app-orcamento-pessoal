@@ -417,11 +417,11 @@ function carregaListaDespesas(despesas = Array(), filtro = false) {
 		btn.onclick = (id) => { 
 
 			// Removendo a despesa
-			// alert("Despesa removida com sucesso!");
+			alert("Despesa removida com sucesso!");
 
 			alert(this.id);
 
-			let id = this.id.replace("id","");
+			//let id = this.id.replace("id","");
 
 			bd.remover(this.id);
 
@@ -436,7 +436,7 @@ function carregaListaDespesas(despesas = Array(), filtro = false) {
 		linha.insertCell(4).append(btn);
 
 
-		console.log(d);
+		// console.log(d);
 
 
 
