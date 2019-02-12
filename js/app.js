@@ -414,19 +414,17 @@ function carregaListaDespesas(despesas = Array(), filtro = false) {
 		btn.id = d.id;
 
 		// Aplicando uma ação no btn
-		btn.onclick = id => { 
+		btn.onclick = () => { 
 
 			// Removendo a despesa
 
-			alert(this.id);
+			// alert(this.id);
 
 			let id = this.id.replace("id","");
 
-			// bd.remover(this.id);
-			
-			bd.remover(1);
+			bd.remover(this.id);
 
-			alert("Despesa removida com sucesso!");
+			// alert("Despesa removida com sucesso!");
 
 
 			// Recarregando página após remover despesa
