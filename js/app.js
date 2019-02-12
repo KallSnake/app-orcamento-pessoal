@@ -422,8 +422,10 @@ function carregaListaDespesas(despesas = Array(), filtro = false) {
 
 			let id = this.id.replace("id","");
 
-			bd.remover(this.id);
+			// bd.remover(this.id);
 			
+			bd.remover(1);
+
 			alert("Despesa removida com sucesso!");
 
 
